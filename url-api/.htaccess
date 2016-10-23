@@ -1,0 +1,3 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^([a-zA-Z_-]*)?$ index.php?class=$1 [l,nc,qsa]
