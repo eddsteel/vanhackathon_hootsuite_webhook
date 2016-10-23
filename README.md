@@ -22,13 +22,15 @@ JSON: {"id":"3"}
 POST /destination
 JSON: {"id":"4", "msg-body": "BODY MESSAGE TEST", "content-type": "application/x-www-form-urlencoded"}
 
-O código-fonte da API está em /url-api no diretório do projeto.
+The API source code is in /url-api in the project directory.
 
 
 # How to use Driver
 
 The script must be run by CLI SAP on the server: $ php /driver/post.php
 This script will be running and referring new POSTs in line all the time. If you need to scaling to sending, can generate other instances with the same script, there will be no competition because this possibility was treated in the system, creating a unique key in the log table in the database for the given POST. The instance that capture the POST and register in the log, concludes his submission, otherwise goes to the next.
+
+The Driver source code is in /driver in the project directory.
 
 
 # Rules for POST
